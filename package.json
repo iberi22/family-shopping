@@ -1,7 +1,7 @@
 {
-  "name": "canasta-familiar",
+  "name": "family-shopping",
   "version": "2.0.0",
-  "description": "Sistema de precios y administración de compras familiares de código abierto",
+  "description": "Open source family shopping management system",
   "main": "src/index.ts",
   "scripts": {
     "dev": "tsx watch src/index.ts",
@@ -27,7 +27,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iberi22/canasta-familiar"
+    "url": "https://github.com/iberi22/family-shopping"
   },
   "dependencies": {
     "better-sqlite3": "^11.0.0",

@@ -1,103 +1,68 @@
-# Canasta Familiar
+# Family Shopping
 
-Sistema de precios y administración de compras familiares de código abierto.
+Open source family shopping management system.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/iberi22/canasta-familiar)](https://github.com/iberi22/canasta-familiar/stargazers)
-[![GitHub Issues](https://img.shields.io/github/issues/iberi22/canasta-familiar)](https://github.com/iberi22/canasta-familiar/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/iberi22/family-shopping)](https://github.com/iberi22/family-shopping/stargazers)
 
-## 📋 Acerca del Proyecto
+## About
 
-Canasta Familiar es un sistema de código abierto para gestionar precios de productos de supermercado, comparar precios entre tiendas, crear listas de compras, seguir el presupuesto familiar y encontrar las mejores ofertas.
+Family Shopping is an open source system for managing supermarket product prices, comparing prices between stores, creating shopping lists, tracking family budget, and finding the best deals.
 
-## ✨ Características
+## Features
 
-- 📊 **Gestión de Precios**: Registra y compara precios entre diferentes tiendas
-- 🛒 **Listas de Compras**: Crea y gestiona listas de compras
-- 📍 **Geolocalización**: Encuentra tiendas cerca de tu ubicación
-- 🎯 **Alertas**: Notificaciones de precios y promociones
-- 💰 **Seguimiento de Ahorro**: Controla cuánto ahorras
-- 🌐 **Comparación Online**: Busca precios en tiendas online
-- 📱 **API REST**: Integración fácil con otras apps
+- 📊 **Price Management**: Record and compare prices across stores
+- 🛒 **Shopping Lists**: Create and manage shopping lists
+- 📍 **Geolocation**: Find stores near you
+- 🎯 **Alerts**: Price and promotion notifications
+- 💰 **Savings Tracking**: Track how much you save
+- 🌐 **Online Comparison**: Search prices in online stores
 
-## 🚀 Inicio Rápido
+## Quick Start
 
 ```bash
-# Clonar el repositorio
-git clone https://github.com/iberi22/canasta-familiar.git
-cd canasta-familiar
+# Clone repository
+git clone https://github.com/iberi22/family-shopping.git
+cd family-shopping
 
-# Instalar dependencias
+# Install dependencies
 npm install
 
-# Inicializar base de datos
+# Initialize database
 npm run db:init
 
-# Iniciar servidor
+# Start server
 npm run dev
 ```
 
-El servidor correrá en `http://localhost:3003`
+Server runs at `http://localhost:3003`
 
-## � API
+## API
 
-Ver la [documentación completa de API](SKILL.md) para todos los endpoints disponibles.
+See [SKILL.md](SKILL.md) for full API documentation.
 
-### Ejemplos
-
-```bash
-# Obtener tiendas cercanas
-curl "http://localhost:3003/api/stores/nearby?lat=4.75&lng=-74.05&radius=3"
-
-# Buscar producto online
-curl "http://localhost:3003/api/scrape/recommend?product=leche+entera"
-
-# Ver ahorro del mes
-curl "http://localhost:3003/api/savings?month=2026-03"
-```
-
-## 🛠️ Tecnologías
+## Technologies
 
 - **Backend**: Node.js + Express
-- **Base de Datos**: SQLite (better-sqlite3)
-- **Lenguaje**: TypeScript
-- **Scraping**: Undici HTTP client
+- **Database**: SQLite (better-sqlite3)
+- **Language**: TypeScript
 
-## 📁 Estructura del Proyecto
+## Contributing
 
-```
-canasta-familiar/
-├── src/
-│   ├── db/           # Esquema de base de datos
-│   └── services/      # Lógica de negocio
-├── data/             # Base de datos SQLite
-├── .github/
-│   └── workflows/    # CI/CD
-├── SKILL.md          # Documentación del skill
-├── README.md         # Este archivo
-└── package.json
-```
+1. Fork the project
+2. Create a branch (`git checkout -b feature/new-feature`)
+3. Commit changes (`git commit -m 'Add new feature'`)
+4. Push to branch (`git push origin feature/new-feature`)
+5. Open a Pull Request
 
-## 🤝 Contribuir
+## License
 
-1. Fork el proyecto
-2. Crea una rama (`git checkout -b feature/nueva-caracteristica`)
-3. Commit tus cambios (`git commit -m 'Agregar nueva característica'`)
-4. Push a la rama (`git push origin feature/nueva-caracteristica`)
-5. Abre un Pull Request
+MIT - See [LICENSE](LICENSE)
 
-## 📄 Licencia
+## Author
 
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para detalles.
-
-## 👤 Autor
-
-- **Belal** - [BeRi0n3](https://github.com/BeRi0n3)
-
-## 🌟 Contribuidores
-
-¡Gracias a todos los que han contribuido a este proyecto!
+BeRi0n3 - https://github.com/BeRi0n3
 
 ---
 
-⭐️ Si te gusta este proyecto, no olvides darle una estrella en GitHub!
+⭐️ If you like this project, don't forget to star it!

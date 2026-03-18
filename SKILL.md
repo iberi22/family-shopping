@@ -1,67 +1,62 @@
 ---
-name: canasta-familiar
-description: Sistema de precios y administración de compras familiares. Gestiona precios de supermercado, listas de compras, comparación de precios, alertas de precios, seguimiento de ahorro y geolocalización de tiendas.
+name: family-shopping
+description: Open source family shopping management system. Manages supermarket prices, shopping lists, price alerts, savings tracking, and store geolocation for Colombian supermarkets.
 version: "2.0.0"
 author: BeRi0n3
 type: skill
 tags: [family, shopping, prices, budget, groceries, supermarket, household, alerts, savings, geolocation, open-source]
-homepage: https://github.com/iberi22/canasta-familiar
-repository: https://github.com/iberi22/canasta-familiar
+homepage: https://github.com/iberi22/family-shopping
+repository: https://github.com/iberi22/family-shopping
+user-invocable: true
 ---
 
-# Canasta Familiar Skill v2.0
+# Family Shopping - OpenClaw Skill
 
-Sistema de precios y administración de compras familiares con alertas, geolocalización y comparación online.
+Open source family shopping management system for Colombian supermarkets.
 
-## Características
+## Features
 
-- 📊 Gestión de precios por tienda
-- 🛒 Listas de compras
-- 📍 Geolocalización de tiendas
-- 🎯 Alertas de precios
-- 💰 Seguimiento de ahorro
-- 🌐 Comparación online de precios
+- 📊 **Price Management**: Record and compare prices
+- 🛒 **Shopping Lists**: Create and manage lists
+- 📍 **Geolocation**: Find stores near you
+- 🎯 **Alerts**: Price drop notifications
+- 💰 **Savings**: Track your savings
+- 🌐 **Online Search**: Compare real-time prices
 
-## Instalación
+## Quick Start
 
 ```bash
-# Clonar el repositorio
-git clone https://github.com/iberi22/canasta-familiar.git
-cd canasta-familiar
-
-# Instalar dependencias
+# Install dependencies
 npm install
 
-# Inicializar base de datos
+# Initialize database
 npm run db:init
 
-# Iniciar servidor
+# Start server
 npm run dev
 ```
 
-## API
+Server runs at `http://localhost:3003`
 
-El servidor corre en `http://localhost:3003`
+## Supported Stores
 
-### Endpoints Principales
+- Mercar, Ara, D1, Cañaveral
+- Éxito, Jumbo, Carulla
 
-| Método | Endpoint | Descripción |
+## API Endpoints
+
+| Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | /api/stores | Listar tiendas |
-| GET | /api/stores/nearby | Tiendas cercanas |
-| GET | /api/prices/compare/:id | Comparar precios |
-| GET | /api/scrape/search | Buscar online |
-| GET | /api/savings | Ahorro del mes |
-| POST | /api/alerts | Crear alerta |
+| GET | /api/stores | List stores |
+| GET | /api/stores/nearby | Nearby stores |
+| GET | /api/prices/compare/:id | Price comparison |
+| GET | /api/savings | Savings summary |
+| POST | /api/alerts | Create alert |
 
-## Documentación Completa
+## Privacy
 
-Ver [README.md](README.md) para documentación más detallada.
+All data stored locally in SQLite. No cloud sync by default.
 
-## Licencia
+---
 
-MIT - Ver [LICENSE](LICENSE)
-
-## Autor
-
-BeRi0n3 - https://github.com/BeRi0n3
+*Skill for OpenClaw - AgentSkills compatible*
