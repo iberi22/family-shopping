@@ -1,0 +1,295 @@
+{
+  "config": {
+    "configFile": "E:\\scripts-python\\personal-finance\\playwright.config.ts",
+    "rootDir": "E:/scripts-python/personal-finance/tests/e2e",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/scripts-python/personal-finance/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "E:/scripts-python/personal-finance/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "playwright-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "basic.spec.ts",
+      "file": "basic.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "E2E Tests",
+          "file": "basic.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "homepage loads without errors",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2439,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3003/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3003/\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3003/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3003/\", waiting until \"load\"\u001b[22m\n\n    at E:\\scripts-python\\personal-finance\\tests\\e2e\\basic.spec.ts:36:16",
+                        "location": {
+                          "file": "E:\\scripts-python\\personal-finance\\tests\\e2e\\basic.spec.ts",
+                          "column": 16,
+                          "line": 36
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 34 |\u001b[39m   \n \u001b[90m 35 |\u001b[39m   test(\u001b[32m'homepage loads without errors'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m takeScreenshot(\u001b[32m'homepage-loaded'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[35m/./\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 39 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\scripts-python\\personal-finance\\tests\\e2e\\basic.spec.ts",
+                            "column": 16,
+                            "line": 36
+                          },
+                          "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3003/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3003/\", waiting until \"load\"\u001b[22m\n\n\n  34 |   \n  35 |   test('homepage loads without errors', async () => {\n> 36 |     await page.goto('/');\n     |                ^\n  37 |     await takeScreenshot('homepage-loaded');\n  38 |     await expect(page).toHaveTitle(/./);\n  39 |   });\n    at E:\\scripts-python\\personal-finance\\tests\\e2e\\basic.spec.ts:36:16"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[Network Failed]: http://localhost:3003/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-22T21:45:21.223Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\scripts-python\\personal-finance\\test-results\\basic-E2E-Tests-homepage-loads-without-errors-chromium\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\scripts-python\\personal-finance\\tests\\e2e\\basic.spec.ts",
+                        "column": 16,
+                        "line": 36
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8946741c555a0c4515d8-dae06dd0ea927edafb39",
+              "file": "basic.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "navigation works",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 2456,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3003/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3003/\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3003/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3003/\", waiting until \"load\"\u001b[22m\n\n    at E:\\scripts-python\\personal-finance\\tests\\e2e\\basic.spec.ts:42:16",
+                        "location": {
+                          "file": "E:\\scripts-python\\personal-finance\\tests\\e2e\\basic.spec.ts",
+                          "column": 16,
+                          "line": 42
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 40 |\u001b[39m   \n \u001b[90m 41 |\u001b[39m   test(\u001b[32m'navigation works'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 42 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 43 |\u001b[39m     \u001b[36mconst\u001b[39m navLink \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'nav'\u001b[39m)\u001b[33m.\u001b[39mgetByText(\u001b[32m'Features'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mawait\u001b[39m navLink\u001b[33m.\u001b[39misVisible()) {\n \u001b[90m 45 |\u001b[39m       \u001b[36mawait\u001b[39m navLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\scripts-python\\personal-finance\\tests\\e2e\\basic.spec.ts",
+                            "column": 16,
+                            "line": 42
+                          },
+                          "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3003/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3003/\", waiting until \"load\"\u001b[22m\n\n\n  40 |   \n  41 |   test('navigation works', async () => {\n> 42 |     await page.goto('/');\n     |                ^\n  43 |     const navLink = page.locator('nav').getByText('Features').first();\n  44 |     if (await navLink.isVisible()) {\n  45 |       await navLink.click();\n    at E:\\scripts-python\\personal-finance\\tests\\e2e\\basic.spec.ts:42:16"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[Network Failed]: http://localhost:3003/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-22T21:45:21.219Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\scripts-python\\personal-finance\\test-results\\basic-E2E-Tests-navigation-works-chromium\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\scripts-python\\personal-finance\\tests\\e2e\\basic.spec.ts",
+                        "column": 16,
+                        "line": 42
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8946741c555a0c4515d8-86461d373216d445e2ec",
+              "file": "basic.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "forms submit correctly",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 2459,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3003/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3003/\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3003/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3003/\", waiting until \"load\"\u001b[22m\n\n    at E:\\scripts-python\\personal-finance\\tests\\e2e\\basic.spec.ts:54:16",
+                        "location": {
+                          "file": "E:\\scripts-python\\personal-finance\\tests\\e2e\\basic.spec.ts",
+                          "column": 16,
+                          "line": 54
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 52 |\u001b[39m   \n \u001b[90m 53 |\u001b[39m   test(\u001b[32m'forms submit correctly'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 54 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 55 |\u001b[39m     \u001b[36mconst\u001b[39m emailInput \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'input[name=\"email\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m     \u001b[36mconst\u001b[39m msgInput \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'textarea[name=\"message\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n \u001b[90m 57 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mawait\u001b[39m emailInput\u001b[33m.\u001b[39misVisible() \u001b[33m&&\u001b[39m \u001b[36mawait\u001b[39m msgInput\u001b[33m.\u001b[39misVisible()) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\scripts-python\\personal-finance\\tests\\e2e\\basic.spec.ts",
+                            "column": 16,
+                            "line": 54
+                          },
+                          "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3003/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3003/\", waiting until \"load\"\u001b[22m\n\n\n  52 |   \n  53 |   test('forms submit correctly', async () => {\n> 54 |     await page.goto('/');\n     |                ^\n  55 |     const emailInput = page.locator('input[name=\"email\"]').first();\n  56 |     const msgInput = page.locator('textarea[name=\"message\"]').first();\n  57 |     if (await emailInput.isVisible() && await msgInput.isVisible()) {\n    at E:\\scripts-python\\personal-finance\\tests\\e2e\\basic.spec.ts:54:16"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[Network Failed]: http://localhost:3003/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-22T21:45:21.227Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\scripts-python\\personal-finance\\test-results\\basic-E2E-Tests-forms-submit-correctly-chromium\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\scripts-python\\personal-finance\\tests\\e2e\\basic.spec.ts",
+                        "column": 16,
+                        "line": 54
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8946741c555a0c4515d8-74c44bbdf798a5e29a36",
+              "file": "basic.spec.ts",
+              "line": 53,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-03-22T21:45:19.819Z",
+    "duration": 4306.301,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}
