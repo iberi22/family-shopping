@@ -1,79 +1,45 @@
-# CLAUDE.md - Template para Proyectos
+# CLAUDE.md - AI Agent Instructions
 
-> Template base para crear archivos CLAUDE.md en proyectos de SWAL.
-> Adaptado de mejores prácticas de Claude Code y GitCore Protocol.
+> **IMPORTANT:** Replace all `<!-- QUESTION: ... -->` blocks with actual answers from Bel.
 
-## Proyecto: personal-finance
+<!-- QUESTION: Is this actually 'personal-finance' or 'family-shopping'? The GitHub link says 'iberi22/family-shopping'. Please clarify. -->
 
-**Descripción:** Proyecto en Node.js
-**Stack:** Node.js
-**Tipo:** webapp (library/cli/webapp/api/agent/script)
+## Project Context
 
----
+A system for managing supermarket product prices, comparing prices between stores, creating shopping lists, tracking family budget, and finding the best deals. The GitHub URL references "family-shopping" but the directory is named "personal-finance".
 
-## 🚀 Quick Start
+Tech Stack: <!-- QUESTION: What tech stack? (the README shows npm, suggest Node.js) -->
+
+## Tech Stack
+
+- **Language:** <!-- QUESTION: What language? -->
+- **Framework:** <!-- QUESTION: What framework? Node.js? -->
+- **Database:** <!-- QUESTION: What database? -->
+
+## Common Tasks
+
+### Running Locally
 
 ```bash
-# Instalar dependencias
-echo 'No tests configured'
-
-# Ejecutar / Build / Dev server
-npm run dev || tsx watch src/index.ts
-
-# Tests
-{TEST_COMMAND}
+git clone https://github.com/iberi22/family-shopping.git
+cd family-shopping
+npm install
 ```
 
-## 📁 Estructura del Proyecto
+## Key Files
 
-```
-{src_or_main_folder}/
-├── {MODULE_OR_FEATURE_1}/      # Descripción
-├── {MODULE_OR_FEATURE_2}/      # Descripción
-└── {CONFIG_FILES}
-```
+| File/Dir | Purpose |
+|----------|---------|
+| <!-- QUESTION: What are the key files? --> | |
 
-## 🔧 Comandos Principales
+## Important Constraints
 
-| Comando | Descripción |
-|---------|-------------|
-| `{dev_command}` | Iniciar desarrollo |
-| `{build_command}` | Build de producción |
-| `{test_command}` | Ejecutar tests |
-| `{lint_command}` | Linting y formateo |
+<!-- QUESTION: Any important constraints? -->
 
-## 🏗️ Arquitectura
+## Environment Variables
 
-# ARCHITECTURE.md - System Architecture  **Project:** Personal Finance **Generated:** 2026-03-20  ## Overview  TODO: Add project overview  ## High-Level Architecture...
-
-### Patrones Clave
-- {PATTERN_1}: {DESCRIPTION}
-- {PATTERN_2}: {DESCRIPTION}
-
-## 📋 Convenciones de Desarrollo
-
-### Git Workflow (GitCore Protocol)
-- Issues: `.github/issues/` → sincroniza con GitHub
-- Commits: `type(scope): description #issue`
-- Branches: `type/short-description-#issue`
-
-### Código
-- {LINT_RULES}
-- {CODING_STANDARD}
-
-## 🔗 Recursos
-
-- Documentación: {DOCS_URL}
-- Repo: {REPO_URL}
-- Issues: {ISSUES_URL}
-
-## 📝 Notas para Agentes
-
-- Leer `.gitcore/ARCHITECTURE.md` antes de trabajar
-- Mantener stateless pattern (GitHub Issues para estado)
-- Usar Claude Code para tareas de código
+<!-- QUESTION: What environment variables are needed? -->
 
 ---
 
-*Última actualización: 2026-03-21*
-*Generado automáticamente por SWAL Agent System*
+*Questions marked with `<!-- QUESTION: ... -->` need answers from Bel.*
