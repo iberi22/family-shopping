@@ -61,7 +61,7 @@ MIT - See [LICENSE](LICENSE)
 
 ## Author
 
-BeRi0n3 - https://github.com/BeRi0n3
+iberi22 - https://github.com/iberi22
 
 ---
 
